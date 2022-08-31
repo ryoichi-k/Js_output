@@ -116,7 +116,8 @@ function abc (xyz) {
 const def = abc('あいう')
 console.log(def) // あいうえお
 ```
-join
+### join
+
 配列の全ての要素を連結して、新しい文字列を作成する
 
 ```js
@@ -125,6 +126,55 @@ const result = date.join('.');
 
 console.log(result); // "2020.02.23"
 ```
+### forEach
 
+配列のループ処理
+配列の各要素に対して一度ずつ実行する
+```js
+const animals = ['dog', 'cat', 'fox'];
+/**
+ * # forEach
+ * value: 現在処理されている配列の要素
+ * index: 現在処理されている配列の要素のインデックス
+ * array: 元々の配列（あまり使わないので下記では省略）
+ */
+animals.forEach((value, index) => {
+  console.log(index, value);
+});
+
+// 0 "dog"
+// 1 "cat"
+// 2 "fox"
+```
+
+### every
+
+配列の 全て の要素が、与えられた条件を満たしているかどうかチェックする
+
+```js
+// 例１
+const numbers = [1, 2, 3, 4, 5, 6];
+const result = numbers.every((num) => num < 5);
+console.log(result); // false
+// 例2
+const numbers = [1, 2, 3, 4, 5, 6];
+const result = numbers.every((num) => num < 10);
+console.log(result); // true
+
+```
+
+### some
+
+配列の 少なくとも1つ の要素が、与えられた条件を満たしているかどうかチェックする
+なお、条件を満たした段階でループは終了する
+
+```js
+const numbers = [1, 2, 3, 4, 5, 6];
+const result = numbers.some((num) => num > 3);
+console.log(result); // true
+
+// numbers[3]以降は評価されずに終了
+
+```
 
 
