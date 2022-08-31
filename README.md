@@ -116,3 +116,5 @@ function abc (xyz) {
 const def = abc('あいう')
 console.log(def) // あいうえお
 ```
+
+
