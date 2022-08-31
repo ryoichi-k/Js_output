@@ -116,5 +116,15 @@ function abc (xyz) {
 const def = abc('あいう')
 console.log(def) // あいうえお
 ```
+join
+配列の全ての要素を連結して、新しい文字列を作成する
+
+```js
+const date = ['2020', '02', '23'];
+const result = date.join('.');
+
+console.log(result); // "2020.02.23"
+```
+
 
 
