@@ -177,4 +177,31 @@ console.log(result); // true
 
 ```
 
+### find
+
+与えられた条件を満たしているか、配列要素の頭から実行（検索）し、
+条件を満たした 最初の配列の要素 を返す
+なお、条件を満たした段階でループは終了する
+
+
+```js
+const numbers = [1, 2, 3, 4, 5, 6];
+const result = numbers.find((num) => num > 3);
+console.log(result); // 4
+
+// numbers[4]以降は評価されずに終了
+
+```
+
+### concat
+
+文字列に別の文字列を連結して、新しい文字列をつくる
+
+```js
+const str1 = `Hello.`;
+const str2 = `World!`;
+const result = str1.concat(str2);
+
+console.log(result); // > "Hello.World!"
+```
 
