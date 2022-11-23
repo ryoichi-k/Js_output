@@ -205,3 +205,20 @@ const result = str1.concat(str2);
 console.log(result); // > "Hello.World!"
 ```
 
+### switch
+
+文字列に別の文字列を連結して、新しい文字列をつくる
+
+```js
+switch (式){
+  case 値1:
+  
+  break;
+  case 値2:
+  
+  break;
+  
+  default:
+    どれにも合致しない場合の処理
+}
+```
